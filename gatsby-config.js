@@ -2,14 +2,15 @@ require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    siteTitle: "gatsby-starter-shopify",
-    siteTitleDefault: "gatsby-starter-shopify by @GatsbyJS",
-    siteUrl: "https://shopify-demo.gatsbyjs.com",
+    siteTitle: "Notes and Flowers",
+    siteTitleDefault:
+      "Notes and Flowers Online by Notes Flower Shop Philippines",
+    siteUrl: "https://www.notesandflower.online",
     hrefLang: "en",
     siteDescription:
       "A Gatsby starter using the latest Shopify plugin showcasing a store with product overview, individual product pages, and a cart.",
-    siteImage: "/default-og-image.jpg",
-    twitter: "@gatsbyjs",
+    siteImage: "/default-NF-image.jpg",
+    // twitter: "@",
   },
   flags: {
     FAST_DEV: true,

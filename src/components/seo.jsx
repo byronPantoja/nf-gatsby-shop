@@ -23,7 +23,6 @@ export function Seo({
           hrefLang
           siteDescription
           siteImage
-          twitter
         }
       }
     }
@@ -36,7 +35,6 @@ export function Seo({
     siteDescription,
     siteImage,
     hrefLang,
-    twitter,
   } = siteMetadata
 
   const seo = {
@@ -60,12 +58,6 @@ export function Seo({
       <meta property="og:description" content={seo.description} />
       <meta property="og:image" content={seo.image} />
       <meta property="og:type" content="website" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={seo.title} />
-      <meta name="twitter:url" content={seo.url} />
-      <meta name="twitter:description" content={seo.description} />
-      <meta name="twitter:image" content={seo.image} />
-      <meta name="twitter:creator" content={twitter} />
       <link
         rel="icon"
         type="image/png"
