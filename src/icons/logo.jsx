@@ -1,7 +1,7 @@
 import * as React from "react"
 
-function Logo(props) {
-  return <img src="NF-logo.jpg" />
+function Logo() {
+  return <img src="/NF-logo.png" />
 }
 
 export default Logo
