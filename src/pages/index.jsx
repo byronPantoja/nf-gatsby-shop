@@ -2,7 +2,8 @@ import * as React from "react"
 import { graphql } from "gatsby"
 import { Layout } from "../components/layout"
 import { ProductListing } from "../components/product-listing"
-import { container, intro, callOut } from "./index.module.css"
+import { hero, container, intro, callOut, logoIntro } from "./index.module.css"
+import Logo from "../icons/logo"
 
 export const query = graphql`
   query {
@@ -16,15 +17,19 @@ export const query = graphql`
 export default function IndexPage({ data }) {
   return (
     <Layout>
-      <div className={container}>
-        <h1 className={intro}>
-          Welcome to our Notes and Flowers GatsbyJS + Shopify Demo Build.
-        </h1>
-        <p className={callOut}>
-          So this is the first time I got to build on the cloud, pretty cool!
+      <div className={hero}>
+        <img className={logoIntro} src="./NF-logo.png" />
+
+        <h1 className={callOut}>Welcome to our Notes and Flowers Online!</h1>
+
+        <p className={intro}>
+          Your favorite florists FAVORITE FLORIST! Come visit us here online or
+          at our shop in Dangwa! 1607 Laong Laan Road, Sampaloc, Manila.
         </p>
       </div>
-      <ProductListing products={data.shopifyCollection.products} />
+      <div className={container}>
+        <ProductListing products={data.shopifyCollection.products} />
+      </div>
     </Layout>
   )
 }

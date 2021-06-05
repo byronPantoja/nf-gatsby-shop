@@ -1,9 +1,24 @@
+.hero {
+  padding-left: var(--size-gutter-raw);
+  padding-right: var(--size-gutter-raw);
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-3xl);
+  max-width: 100%;
+  min-height: 75vh;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5), #fcf5f0),
+    url("../../static/background.jpg");
+  background-size: cover;
+}
+
 .container {
   padding-left: var(--size-gutter-raw);
   padding-right: var(--size-gutter-raw);
   padding-top: var(--space-lg);
   padding-bottom: var(--space-3xl);
-  max-width: 76ch;
+  max-width: 100%;
+  min-height: 75vh;
+  background-color: linear-gradient(0deg, rgba(255, 255, 255, 0.5), #fcf5f0);
+  background-size: cover;
 }
 
 .intro {
@@ -37,4 +52,10 @@
 
 .deployButton {
   margin-top: var(--space-lg);
+}
+
+.logoIntro {
+  margin: 0 auto;
+  max-width: 45%;
+  height: auto;
 }
